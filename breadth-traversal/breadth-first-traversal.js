@@ -2,9 +2,9 @@
 
 module.exports = Tree;
 
-function Tree(val) {
+function Tree(val, children) {
   this.val = val;
-  this.children = [];
+  this.children = children || [];
 }
 
 Tree.prototype.printLevelOrder = function() {
